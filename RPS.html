@@ -1,0 +1,61 @@
+<html>
+<script>
+function computerPlay(){
+    x =  Math.floor(Math.random() * 10);  
+    if (x <3){
+				x = "stone";
+			}else if(x <=6){
+				x = "paper";
+			}else{
+				x = "scissor";
+			}
+}
+function userOption(){
+    y = prompt("What do you choose?")
+
+}
+
+function compare(y, x)
+		{
+			
+
+		    if (y == x)
+		    {
+		       return "It is a draw!";
+            
+		    }
+		    
+		    if (y == "stone")
+		    {
+		        if (x == "scissor")
+		        {
+		             return "You win.";
+                     
+		        } else {
+		            return "The computer win. Try again.";
+		        }
+		        
+		    } else if (y == "paper") {
+		        
+		        if (x == "stone")
+		        {
+		             return "You win.";
+		        } else if("scissor") {
+		            return "The computer win. Try again." ;
+		              
+                }
+		        
+		    } else if (y == "scissor") {
+		      
+		        if (x == "stone")
+		        {
+		            return "The computer win. Try again.";
+                }else{
+		            return "You win.";
+		        }
+		    }
+		}  
+    
+
+</script>
+</html>
